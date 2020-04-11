@@ -47,7 +47,7 @@ class gogs::install (
     group       => $group,
     environment => [
       "PUPPET_GOGS_INSTALLATION_DIRECTORY=${installation_directory}",
-      'PUPPET_GOGS_OS=linux',
+      'PUPPET_GOGS_OS=raspi',
       "PUPPET_GOGS_ARCH=${::architecture}",
       "PUPPET_GOGS_VERSION=${version}",
     ],
