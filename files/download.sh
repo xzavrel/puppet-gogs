@@ -12,6 +12,7 @@ PUPPET_GOGS_OS=$(echo "${PUPPET_GOGS_OS}" | awk '{print tolower($0)}')
 
 PUPPET_GOGS_ARCH="${PUPPET_GOGS_ARCH/x86_64/amd64}"
 PUPPET_GOGS_ARCH="${PUPPET_GOGS_ARCH/i386/386}"
+PUPPET_GOGS_ARCH="${PUPPET_GOGS_ARCH/armv7l/armv7}"
 
 if [ ${PUPPET_GOGS_VERSION} == "latest" ]; then
     echo "fetching latest version"
